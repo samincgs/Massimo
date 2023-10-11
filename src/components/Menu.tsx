@@ -35,23 +35,31 @@ const Menu = () => {
           onClick={() => setOpen(false)}
         />
       )}
-      <div className=" bg-red-500 text-white absolute left-0 top-24 h-[calc(100vh-6rem)] flex flex-col items-center  justify-center text-3x gap-8 w-full z-10">
-        {/* HOMEPAGE, MENU, WORKING HOURS, CONTACT */}
-        {links.map((item) => (
-          <Link href={item.url} key={item.id}>
-            {item.title}
-          </Link>
-        ))}
-        {/* IF USER LOGGED IN SHOW ORDERS ELSE LOGIN */}
-        {!user ? (
-          <Link href="/login">Login</Link>
-        ) : (
-          <Link href="/orders">Orders</Link>
-        )}
+      {open && (
+        <div className=" bg-red-500 text-white absolute left-0 top-24 h-[calc(100vh-6rem)] flex flex-col items-center  justify-center text-3x gap-8 w-full z-10">
+          {/* HOMEPAGE, MENU, WORKING HOURS, CONTACT */}
+          {links.map((item) => (
+            <Link href={item.url} key={item.id} onClick={() => setOpen(false)}>
+              {item.title}
+            </Link>
+          ))}
+          {/* IF USER LOGGED IN SHOW ORDERS ELSE LOGIN */}
+          {!user ? (
+            <Link href="/login" onClick={() => setOpen(false)}>
+              Login
+            </Link>
+          ) : (
+            <Link href="/orders" onClick={() => setOpen(false)}>
+              Orders
+            </Link>
+          )}
 
-        {/* CART */}
-        <CartIcon />
-      </div>
+          {/* CART */}
+          <Link href="/cart" onClick={() => setOpen(false)}>
+            <CartIcon />
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
