@@ -55,7 +55,7 @@ const Menu = () => {
           )}
 
           {/* CART */}
-          <Link href="/cart" onClick={() => setOpen(false)}>
+          <Link href="/cart" onClick={() => setOpen(false)} className="mr-3">
             <CartIcon />
           </Link>
         </div>
