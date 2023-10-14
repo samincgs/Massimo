@@ -1,7 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const MenuPage = () => {
-  return <div>MenuPage</div>;
+  return (
+    <div>
+      <div>Menu items</div>
+    </div>
+  );
 };
 
 export default MenuPage;
