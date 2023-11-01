@@ -2,7 +2,7 @@
 
 [STILL IN PROGRESS]
 
-A full-stack Restaurant Food Delivery service that provides a comprehensive, mobile-responsive platform with intuitive user design, robust payment processing, and real-time order status updates.
+A Restaurant Food Delivery service that provides a comprehensive, mobile-responsive platform with intuitive user design. This nextjs website is made to help improve my design skills and make more fluid and well-constructe website designs.
 
 ### Frameworks/Libraries Used
 
@@ -10,7 +10,6 @@ A full-stack Restaurant Food Delivery service that provides a comprehensive, mob
 - React
 - TypeScript
 - TailwindCSS
-- MongoDB
 
 ### Features
 
