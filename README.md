@@ -1,7 +1,5 @@
 # Massimo
 
-[STILL IN PROGRESS]
-
 A Restaurant Food Delivery service that provides a comprehensive, mobile-responsive platform with intuitive user design. This nextjs website is made to help improve my design skills and make more fluid and well-constructe website designs.
 
 ### Frameworks/Libraries Used
@@ -10,10 +8,6 @@ A Restaurant Food Delivery service that provides a comprehensive, mobile-respons
 - React
 - TypeScript
 - TailwindCSS
-
-### Features
-
-- [TO BE UPDATED]
 
 ### Credits
 
